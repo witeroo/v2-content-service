@@ -21,7 +21,7 @@
                         <path d="M414.003 315.312L264.669 376.386L206.922 400L149.467 375.293L0.618796 311.279L0.351562 262.715L207.214 351.679L413.736 267.234L414.003 315.312Z" fill="white"/>
                     </svg>
                 </a>
-                <p>Witeroo Inc. is a technology company that provides consulting, technical management, industrial automation, cloud solutions and software development services to individual clients and businesses in different industries.</p>
+                <p>Witeroo Inc. is a technology company that provides consulting, technical management, industrial automation, cloud solutions and software development services to clients and businesses in diverse industries.</p>
                 <div class="socials d-flex">
                     <a href="#" class="social-icon">
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
