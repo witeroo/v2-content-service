@@ -73,9 +73,26 @@ jQuery(document).ready(function($) {
 
 
     // subscription form popup
+    let subscriptionActionTaken = false;
+    let subTriggerOffset = $('section.articles').offset() ? $('section.articles').offset().top : $('section.subscribe').offset().top - 700;
+    $(document).scroll(function() {
+        if (!subscriptionActionTaken) {
+            if ($(window).scrollTop() >= subTriggerOffset) {
+                $('.modal.subscription-popup-container').attr('style', 'display:flex;');
+            }
+        }
+    });
+
+    $('.modal.subscription-popup-container .btn, .modal.subscription-popup-container .close-btn').click(() => {
+        subscriptionActionTaken = true;
+        $('.modal.subscription-popup-container').hide();
+    })
+
+
+
     if ($('#subscribe-btn')) {
         // show subscription form container
-        $('#subscribe-btn').click(() => {
+        $('#subscribe-btn, #popup-subscribe-btn').click(() => {
             $('.subscription-form-container').show();
         });
 
@@ -90,9 +107,9 @@ jQuery(document).ready(function($) {
             }
         });
 
-        // hide subscription form container
-        $('.subscription-form-container .close-btn').click(() => {
-            $('.subscription-form-container').hide();
+        // hide modal container
+        $('.modal .close-btn').click(() => {
+            $('.modal').hide();
         });
 
 
