@@ -622,8 +622,8 @@
                         <path d="M5 5L15 15" stroke="#01040A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </button>
-                <h1>Subscribe for future<br>updates</h1>
-                <p>We regularly publish meaningful industry insights on our blog, subscribe to our newsletter to keep in touch with all out all these and more meaningful updates from us.</p>
+                <h1>Join our<br>Newsletter</h1>
+                <p>Sign-up today and get occasional email contents on technology. </p>
                 <div class="d-flex">
                     <a href="#" class="btn btn-secondary" id="popup-subscribe-btn">Subscribe to Newsletter</a>
                 </div>

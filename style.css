@@ -407,7 +407,7 @@ nav.blog-nav .search-box input::placeholder {
 
 section.blogs {
     margin: auto;
-    max-width: 1440px;
+    max-width: 1680px;
     padding: 70px 120px;
 }
 
@@ -623,7 +623,7 @@ section.blogs.single {
 
 .blogs.single .recent-blogs {
     border-top: 1px solid #DDDEDF;
-    padding: 140px calc((100% - 1200px) / 2) 0;
+    padding: 140px calc((100% - 1440px) / 2) 0;
 }
 
 .blogs.single .recent-blogs h3.continue {
