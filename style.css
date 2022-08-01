@@ -626,7 +626,8 @@ section.blogs.single {
     padding: 140px calc((100% - 1440px) / 2) 0;
 }
 
-.blogs.single .recent-blogs h3.continue {
+.blogs.single .recent-blogs h3.continue,
+.blogs.search .recent-blogs h3.continue {
     margin-bottom: 32px;
     font-weight: 900;
     font-size: 24px;
@@ -638,6 +639,37 @@ section.blogs.single {
 /* 
  * end blog inner page
 */
+
+
+/* search page */
+
+section.search-header {
+    margin: 140px auto 70px;
+    max-width: 1680px;
+    padding: 0 240px;
+    text-align: center;
+}
+
+.search-header h2 {
+    margin-bottom: 8px;
+    font-weight: 1000;
+    font-size: 40px;
+    line-height: 120%;
+}
+
+.search-header h2 span {
+    color: #808187;
+}
+
+.search-header .search-count {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #0A41DE;
+}
+
+
+/* end search page */
 
 
 /* footer */
@@ -774,6 +806,7 @@ footer p.copy {
     background: #FFF;
     font-weight: 400;
     font-size: 16px;
+    line-height: 150%;
 }
 
 .subscription-popup-body h1 {
@@ -1270,6 +1303,15 @@ footer p.copy {
     /* 
     * end blog inner page
     */
+    /* search page */
+    section.search-header {
+        margin: 80px auto 0;
+        padding: 0 24px;
+    }
+    .search-header h2 {
+        font-size: 32px;
+    }
+    /* end search page */
     /*
      * footer
     */
@@ -1305,9 +1347,29 @@ footer p.copy {
     /*
      * subscription popup
      */
-    .subscription-form-container {
+    .modal {
         z-index: 99;
         padding: 0;
+    }
+    .modal.subscription-popup-container {
+        padding: 0 24px;
+    }
+    .subscription-popup-content {
+        flex-direction: column;
+    }
+    .subscription-popup-image,
+    .subscription-popup-image img {
+        max-width: 100%;
+        max-height: 366px;
+    }
+    .subscription-popup-body {
+        padding: 56px 40px;
+    }
+    .subscription-popup-body p {
+        max-width: 100%;
+    }
+    .subscription-popup-body .btn {
+        padding: 14px 24px;
     }
     .subscription-form-content {
         width: auto;
@@ -1316,7 +1378,7 @@ footer p.copy {
         padding: 48px;
         background-image: url('img/subscription-header-bg-m.png');
     }
-    .subscription-form-content .subscription-header h1 {
+    .modal h1 {
         font-weight: 900;
         font-size: 24px;
     }
