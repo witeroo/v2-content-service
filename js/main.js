@@ -139,4 +139,48 @@ jQuery(document).ready(function($) {
         }
         $('.subscription-body form input, .subscription-body form select').on('focus click change keyup', validateSubscriptionFormInputFields);
     }
+
+
+
+    // state cities dropdown
+    let payload = { 'action': 'state_cities' };
+    $('select[name="country"]').change(function() {
+        let countryCode = $(this).find(':selected').attr('data-value');
+        let stateOpts = $(this).parent().find('select[name="state"]');
+        $(stateOpts).empty();
+
+        if (countryCode) {
+            payload.countryCode = countryCode;
+            // $.getJSON('states-cities/' + countryCode + '.json', (data) => {
+            $.getJSON(serverVars.ajaxUrl, payload, (data) => {
+                let states = [];
+                $(data).each(function() {
+                    states.push('<option>' + $(this)[0].name + '</option>')
+                })
+
+                $(stateOpts).append('<option value="">State</option>' + states)
+            })
+        }
+    })
+
+    $('select[name="state"]').change(function() {
+        let countryCode = $(this).parents('form').find('select[name="country"]').find(':selected').attr('data-value');
+        payload.countryCode = countryCode;
+        let state = $(this).val();
+        let cityOpts = $(this).parent().find('select[name="city"]');
+        $(cityOpts).empty();
+
+        if (state) {
+            // $.getJSON('states-cities/' + countryCode + '.json', (data) => {
+            $.getJSON(serverVars.ajaxUrl, payload, (data) => {
+                let jsonCities = data.find(jsonState => jsonState.name === state).cities;
+
+                let cities = jsonCities.map((city) => {
+                    return '<option>' + city + '</option>';
+                });
+
+                $(cityOpts).append('<option value="">City</option>' + cities)
+            })
+        }
+    })
 });
