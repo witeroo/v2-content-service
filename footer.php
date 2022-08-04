@@ -47,7 +47,7 @@
             <div class="footer-col">
                 <h5>Navigation</h5>
                 <ul class="nav">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="https://witeroo-v2.netlify.app">Home</a></li>
                     <li><a href="https://witeroo-v2.netlify.app/#services">Our Services</a></li>
                     <li><a href="https://witeroo-v2.netlify.app/#business">Business</a></li>
                     <li><a href="https://witeroo-v2.netlify.app/projects">Projects</a></li>
