@@ -6,9 +6,6 @@
     ?>
     <section class="blogs single">
         <div class="single-blog">
-            <div class="featured-image">
-                <?php the_post_thumbnail('witeroo-large'); ?>
-            </div>
             <div class="blog-meta">
                 <a href="<?php echo get_category_link($choiceCategory); ?>" class="blog-tag"><?php echo $choiceCategory->name; ?></a>
                 <h1 class="single-title"><?php the_title(); ?></h1>
@@ -38,13 +35,16 @@
                     </div>
                 </div>
             </div>
+            <div class="featured-image">
+                <?php the_post_thumbnail('witeroo-large'); ?>
+            </div>
             <div class="blog-content">
                 <?php the_content(); ?>
             </div>
         </div>
         <div class="recent-blogs">
-            <h3 class="continue">Continue Reading...</h3>
             <div class="recent-blogs-container articles-container">
+                <h3 class="continue">Continue Reading...</h3>
                 <div class="article-cards-row d-flex">
                     <?php
                         $args = [
