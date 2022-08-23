@@ -187,5 +187,28 @@ jQuery(document).ready(function($) {
                 $(cityOpts).append('<option value="">City</option>' + cities)
             })
         }
-    })
+    });
+
+
+    // submit subscription form
+    $(".subscription-form").submit(function(e) {
+        e.preventDefault();
+
+        $.post('https://dashboard.witeroo.com/api/subscriptions', $(this).serialize(), (data) => {
+            if (data.success) {
+                $('#subscription-alert').removeClass('alert-danger').addClass('alert-success').text(data.message).show();
+                $('.modal').delay(5000).hide(0);
+            } else {
+                if (data.errors) {
+                    let errorMessages = '';
+                    for (const error in data.errors) {
+                        errorMessages += '<p>' + data.errors[error] + '</p>';
+                    }
+                    $('#subscription-alert').removeClass('alert-success').addClass('alert-danger').html(errorMessages).show()
+                } else {
+                    $('#subscription-alert').removeClass('alert-success').addClass('alert-danger').text(data.message).show();
+                }
+            }
+        });
+    });
 });

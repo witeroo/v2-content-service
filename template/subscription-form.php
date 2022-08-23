@@ -23,20 +23,22 @@
                 </button>
             </div>
             <div class="subscription-body">
+            <div class="alert" role="alert" id="subscription-alert"></div>
                 <select id="subscriber-type">
                     <option>Select Subscriber Type</option>
                     <option>Individual</option>
                     <option>Business</option>
                 </select>
-                <form id="individual-form">
+                <form id="individual-form" class="subscription-form">
+                    <input type="hidden" name="type" value="Individual">
                     <div class="form-row d-flex">
-                        <input type="text" name="first-name" placeholder="First Name">
-                        <input type="text" name="last-name" placeholder="Last Name">
+                        <input type="text" name="first_name" placeholder="First Name">
+                        <input type="text" name="last_name" placeholder="Last Name">
                     </div>
                     <input type="email" name="email" placeholder="Enter your Email">
-                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="text" name="phone_no" placeholder="Phone Number">
                     <select name="country">
-                        <option>Country</option>
+                        <option value="">Country</option>
                         <option data-value="AF">Afghanistan</option>
                         <option data-value="AX">Aland Islands</option>
                         <option data-value="AL">Albania</option>
@@ -291,13 +293,14 @@
                         <option data-value="ZW">Zimbabwe</option>
                     </select>
                     <div class="form-row d-flex">
-                        <select name="state"><option>State</option></select>
-                        <select name="city"><option>City</option></select>
+                        <select name="state"><option value="">State</option></select>
+                        <select name="city"><option value="">City</option></select>
                     </div>
                     <input type="submit" disabled="disabled" value="Subscribe to Newsletter">
                 </form>
-                <form id="business-form">
-                    <input type="text" name="org-name" placeholder="Name of Organization">
+                <form id="business-form" class="subscription-form">
+                    <input type="hidden" name="type" value="Business">
+                    <input type="text" name="business_name" placeholder="Name of Organization">
                     <select name="industry">
                         <option value="">Industry</option>
                         <option>Architecture & Planning</option>
@@ -344,10 +347,10 @@
                         <option>Venture Capital & Private Equity</option>
                         <option>Warehousing, Logistics & Supply Chain</option>
                     </select>
-                    <input type="email" name="comp-email" placeholder="Enter Company Email">
-                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="Enter Company Email">
+                    <input type="text" name="phone_no" placeholder="Phone Number">
                     <select name="country">
-                        <option>Country</option>
+                        <option value="">Country</option>
                         <option data-value="AF">Afghanistan</option>
                         <option data-value="AX">Aland Islands</option>
                         <option data-value="AL">Albania</option>
@@ -412,6 +415,7 @@
                         <option data-value="DJ">Djibouti</option>
                         <option data-value="DM">Dominica</option>
                         <option data-value="DO">Dominican Republic</option>
+                        <option data-value="TL">East Timor</option>
                         <option data-value="EC">Ecuador</option>
                         <option data-value="EG">Egypt</option>
                         <option data-value="SV">El Salvador</option>
@@ -602,8 +606,8 @@
                         <option data-value="ZW">Zimbabwe</option>
                     </select>
                     <div class="form-row d-flex">
-                        <select name="state"><option>State</option></select>
-                        <select name="city"><option>City</option></select>
+                        <select name="state"><option value="">State</option></select>
+                        <select name="city"><option value="">City</option></select>
                     </div>
                     <input type="submit" disabled="disabled" value="Subscribe to Newsletter">
                 </form>
