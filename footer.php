@@ -66,7 +66,7 @@
                 <ul class="nav">
                     <li><a href="tel: +1(519)-991-1920">+1(519)-991-1920</a></li>
                     <li><a href="mailto: info@witeroo.com">info@witeroo.com</a></li>
-                    <li><a href="#">180 Northfield Dr. W. ON N2L 0C7, Waterloo, ON Canada.</a></li>
+                    <li><a href="#">180 Northfield Dr. W. ON. Waterloo. N2L 0C7 Canada.</a></li>
                 </ul>
             </div>
         </div>
