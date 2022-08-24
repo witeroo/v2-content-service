@@ -1247,6 +1247,18 @@ footer p.copy {
         width: 100%;
         height: auto;
     }
+    .blogs.single .article-card-item .article-card-item-img {
+        height: 216px;
+        overflow: hidden;
+    }
+    .blogs.single .article-card-item-img img {
+        min-width: 100%;
+        min-height: 216px;
+    }
+    .blogs.single .article-card-item .article-card-item-text {
+        width: 100%;
+        height: 277px;
+    }
     .blogs .article-card-item-text h4.article-title {
         font-weight: 700;
         font-size: 16px;
