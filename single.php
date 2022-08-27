@@ -42,6 +42,7 @@
                 <?php the_content(); ?>
             </div>
         </div>
+        <?php if(wp_count_posts()->publish > 6): ?>
         <div class="recent-blogs">
             <div class="recent-blogs-container articles-container">
                 <h3 class="continue">Continue Reading...</h3>
@@ -103,6 +104,7 @@
                 <div class="indicator"></div>
             </div>
         </div>
+        <?php endif; ?>
     </section>
     
 <?php get_footer(); ?>

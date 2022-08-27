@@ -17,7 +17,7 @@
 
 <body>
     <nav class="main-nav d-flex p-relative">
-        <a href="https://witeroo-v2.netlify.app/" class="logo">
+        <a href="https://witeroo.com/" class="logo">
             <svg viewBox="0 0 2931 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M551.763 112.167L599.573 280.207L644.59 112.167H703.551L747.183 280.669L795.917 112.167H862.749L784.304 350.757H714.678L672.892 206.864L630.184 350.757H560.558L482.574 112.167H551.763Z" fill="#01040A"/>
                 <path d="M1187.24 125.284C1205.34 115.227 1226.31 110.198 1250.14 110.198C1274.29 110.198 1295.54 114.911 1313.96 124.361C1332.37 133.811 1346.75 147.1 1357.13 164.276C1367.5 181.452 1372.82 201.64 1373.14 224.84C1373.14 233.198 1372.53 240.632 1371.29 247.118H1198.15V248.964C1199.7 266.286 1205.27 279.915 1214.86 289.802C1224.46 299.714 1237.6 304.646 1254.32 304.646C1267.63 304.646 1278.68 301.779 1287.5 296.07C1296.32 290.337 1302.13 281.907 1304.92 270.78H1369.44C1366.97 286.571 1360.94 300.807 1351.35 313.489C1341.75 326.17 1329.07 336.155 1313.28 343.419C1297.49 350.683 1279.39 354.327 1258.96 354.327C1232.35 354.327 1209.37 349.371 1190.03 339.483C1170.7 329.571 1155.83 315.432 1145.48 297.018C1135.11 278.603 1129.93 257.176 1129.93 232.736C1129.93 207.981 1134.96 186.383 1145.02 167.993C1155.05 149.578 1169.14 135.342 1187.24 125.284ZM1289.83 170.762C1280.09 162.867 1267.78 158.931 1252.93 158.931C1238.7 158.931 1226.69 163.037 1216.95 171.224C1207.21 179.435 1201.4 190.489 1199.53 204.409H1307.69C1305.53 189.882 1299.58 178.658 1289.83 170.762Z" fill="#01040A"/>
@@ -37,12 +37,12 @@
             </svg>
         </a>
         <ul class="navbar-nav d-flex" id="navbar-nav">
-            <li><a href="https://witeroo-v2.netlify.app/">Home</a></li>
-            <li><a href="https://witeroo-v2.netlify.app/#services">Services</a></li>
-            <li><a href="https://witeroo-v2.netlify.app/#business">Business</a></li>
-            <li><a href="https://witeroo-v2.netlify.app/projects">Projects</a></li>
+            <li><a href="https://witeroo.com/">Home</a></li>
+            <li><a href="https://witeroo.com/#services">Services</a></li>
+            <li><a href="https://witeroo.com/#business">Business</a></li>
+            <li><a href="https://witeroo.com/projects">Projects</a></li>
             <li class="active"><a href="<?php echo site_url(); ?>">Blog</a></li>
-            <li class="d-flex"><a href="https://witeroo-v2.netlify.app/contact" class="btn btn-primary contact-btn">Contact Us</a></li>
+            <li class="d-flex"><a href="https://witeroo.com/contact" class="btn btn-primary contact-btn">Contact Us</a></li>
         </ul>
         <button class="hamburger hamburger--collapse d-none" type="button">
             <span class="hamburger-box">

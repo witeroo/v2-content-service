@@ -2,7 +2,7 @@
     <footer>
         <div class="footer-row d-flex">
             <div class="footer-col footer-about d-flex">
-                <a href="https://witeroo-v2.netlify.app/" class="logo">
+                <a href="https://witeroo.com/" class="logo">
                     <svg viewBox="0 0 2931 400" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M552.115 112.167L599.926 280.208L644.942 112.167H703.903L747.535 280.669L796.269 112.167H863.101L784.656 350.757H715.03L673.244 206.865L630.536 350.757H560.91L482.926 112.167H552.115Z" fill="white"/>
                         <path d="M1187.59 125.284C1205.69 115.227 1226.66 110.198 1250.49 110.198C1274.64 110.198 1295.9 114.911 1314.31 124.361C1332.72 133.811 1347.11 147.1 1357.48 164.276C1367.85 181.452 1373.17 201.64 1373.49 224.84C1373.49 233.198 1372.88 240.632 1371.64 247.118H1198.5V248.964C1200.06 266.286 1205.62 279.915 1215.22 289.802C1224.81 299.714 1237.95 304.646 1254.67 304.646C1267.98 304.646 1279.04 301.779 1287.85 296.07C1296.67 290.337 1302.48 281.907 1305.27 270.78H1369.8C1367.32 286.571 1361.29 300.807 1351.7 313.489C1342.1 326.17 1329.42 336.155 1313.63 343.419C1297.84 350.683 1279.74 354.327 1259.31 354.327C1232.71 354.327 1209.73 349.371 1190.39 339.483C1171.05 329.571 1156.18 315.432 1145.83 297.018C1135.46 278.603 1130.28 257.176 1130.28 232.736C1130.28 207.981 1135.31 186.383 1145.37 167.993C1155.4 149.578 1169.49 135.342 1187.59 125.284ZM1290.19 170.762C1280.44 162.867 1268.13 158.931 1253.28 158.931C1239.05 158.931 1227.05 163.037 1217.3 171.224C1207.56 179.435 1201.76 190.489 1199.89 204.409H1308.04C1305.88 189.882 1299.93 178.658 1290.19 170.762Z" fill="white"/>
@@ -47,18 +47,18 @@
             <div class="footer-col">
                 <h5>Navigation</h5>
                 <ul class="nav">
-                    <li><a href="https://witeroo-v2.netlify.app">Home</a></li>
-                    <li><a href="https://witeroo-v2.netlify.app/#services">Our Services</a></li>
-                    <li><a href="https://witeroo-v2.netlify.app/#business">Business</a></li>
-                    <li><a href="https://witeroo-v2.netlify.app/projects">Projects</a></li>
+                    <li><a href="https://witeroo.com">Home</a></li>
+                    <li><a href="https://witeroo.com/#services">Our Services</a></li>
+                    <li><a href="https://witeroo.com/#business">Business</a></li>
+                    <li><a href="https://witeroo.com/projects">Projects</a></li>
                     <li><a href="<?php echo site_url(); ?>">Blog</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h5>Terms & Privacy</h5>
                 <ul class="nav">
-                    <li><a href="https://witeroo-v2.netlify.app/terms">Terms & Conditions</a></li>
-                    <li><a href="https://witeroo-v2.netlify.app/privacy">Privacy Policy</a></li>
+                    <li><a href="https://witeroo.com/terms">Terms & Conditions</a></li>
+                    <li><a href="https://witeroo.com/privacy">Privacy Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -70,7 +70,7 @@
                 </ul>
             </div>
         </div>
-        <p class="copy">&copy; Copyright 2022 All rights reserved | Witeroo Inc.</p>
+        <p class="copy">&copy; Copyright <?php echo Date('Y'); ?> All rights reserved | Witeroo Inc.</p>
     </footer>
     <?php wp_footer(); ?>
 </body>
