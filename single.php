@@ -13,14 +13,14 @@
                 <div class="share-buttons d-flex">
                     <span>Share this Article</span>
                     <div class="socials d-inline-flex">
-                        <a href="https://linkedin.com/shareArticle?url=<?php urlencode(get_the_permalink()); ?>&title=<?php urlencode(get_the_title()); ?>&summary=<?php get_the_excerpt(); ?>" target="_blank" class="social-icon">
+                        <a href="https://linkedin.com/shareArticle?url=<?php echo urlencode(get_the_permalink()); ?>&title=<?php echo urlencode(get_the_title()); ?>&summary=<?php echo urlencode(get_the_excerpt()); ?>" target="_blank" class="social-icon">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M10.6667 5.33398C11.7275 5.33398 12.7449 5.75541 13.4951 6.50556C14.2452 7.2557 14.6667 8.27312 14.6667 9.33398V14.0007H12V9.33398C12 8.98036 11.8595 8.64122 11.6095 8.39118C11.3594 8.14113 11.0203 8.00065 10.6667 8.00065C10.313 8.00065 9.9739 8.14113 9.72386 8.39118C9.47381 8.64122 9.33333 8.98036 9.33333 9.33398V14.0007H6.66666V9.33398C6.66666 8.27312 7.08809 7.2557 7.83824 6.50556C8.58838 5.75541 9.6058 5.33398 10.6667 5.33398V5.33398Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M4 6H1.33334V14H4V6Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M2.66667 4.00065C3.40305 4.00065 4 3.4037 4 2.66732C4 1.93094 3.40305 1.33398 2.66667 1.33398C1.93029 1.33398 1.33334 1.93094 1.33334 2.66732C1.33334 3.4037 1.93029 4.00065 2.66667 4.00065Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </a>
-                        <a href="https://twitter.com/intent/tweet?url=<?php urlencode(get_the_permalink()); ?>" target="_blank" class="social-icon">
+                        <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_the_permalink()); ?>" target="_blank" class="social-icon">
                             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M15.3333 2.00084C14.6949 2.45116 13.9881 2.79558 13.24 3.02084C12.8385 2.55918 12.3049 2.23197 11.7114 2.08346C11.1178 1.93495 10.493 1.97231 9.92139 2.19048C9.34978 2.40865 8.85896 2.79711 8.51532 3.30332C8.17168 3.80953 7.9918 4.40907 8 5.02084V5.68751C6.82842 5.71789 5.66752 5.45805 4.62067 4.93114C3.57383 4.40423 2.67355 3.6266 2 2.66751C2 2.66751 -0.666665 8.66751 5.33333 11.3342C3.96035 12.2662 2.32477 12.7335 0.666668 12.6675C6.66667 16.0008 14 12.6675 14 5.00084C14 4.81418 13.98 4.62751 13.9467 4.44751C14.6271 3.77651 15.1072 2.92932 15.3333 2.00084V2.00084Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
