@@ -73,7 +73,20 @@ jQuery(document).ready(function($) {
 
 
     // subscription form popup
-    let subscriptionActionTaken = false;
+    function checkSubscriptionActionCookie() {
+        let name = "subscriptionActionTaken=";
+        let ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            if (c.indexOf(name) == 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    let subscriptionActionTaken = checkSubscriptionActionCookie();
+
     let subTriggerOffset = 0;
     if ($('section.articles').offset()) {
         subTriggerOffset = $('section.articles').offset().top;
@@ -88,10 +101,14 @@ jQuery(document).ready(function($) {
         }
     });
 
+    function setSubscriptionActionCookie() {
+        document.cookie = "subscriptionActionTaken=true;path=/";
+        console.log('cookie set');
+    }
     $('.modal.subscription-popup-container .btn, .modal.subscription-popup-container .close-btn').click(() => {
-        subscriptionActionTaken = true;
         $('.modal.subscription-popup-container').hide();
     })
+    $('.modal.subscription-popup-container .close-btn').click(setSubscriptionActionCookie);
 
 
 
@@ -196,6 +213,7 @@ jQuery(document).ready(function($) {
 
         $.post('https://dashboard.witeroo.com/api/subscriptions', $(this).serialize(), (data) => {
             if (data.success) {
+                setSubscriptionActionCookie();
                 $('#subscription-alert').removeClass('alert-danger').addClass('alert-success').text(data.message).show();
                 $('.modal').delay(5000).hide(0);
             } else {
