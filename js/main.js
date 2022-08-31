@@ -103,7 +103,7 @@ jQuery(document).ready(function($) {
 
     function setSubscriptionActionCookie() {
         document.cookie = "subscriptionActionTaken=true;path=/";
-        console.log('cookie set');
+        subscriptionActionTaken = true;
     }
     $('.modal.subscription-popup-container .btn, .modal.subscription-popup-container .close-btn').click(() => {
         $('.modal.subscription-popup-container').hide();
