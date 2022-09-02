@@ -59,6 +59,7 @@
                 <ul class="nav">
                     <li><a href="https://witeroo.com/terms">Terms & Conditions</a></li>
                     <li><a href="https://witeroo.com/privacy">Privacy Policy</a></li>
+                    <li><a href="https://witeroo.com/cookies">Cookies Policy</a></li>
                 </ul>
             </div>
             <div class="footer-col">
