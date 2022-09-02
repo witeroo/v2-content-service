@@ -3,7 +3,7 @@
             <div class="section-header">
                 <h2>Subscribe for future updates</h2>
                 <p>
-                    We regularly publish meaningful industry insights on our blog, subscribe to our newsletter to keep in touch with all out all these and more meaningful updates from us.
+                Subscribe today and get meaningful and insightful newsletters on technology and other industry-related content.
                 </p>
                 <div class="d-flex">
                     <a href="#" class="btn btn-secondary" id="subscribe-btn">Subscribe</a>
