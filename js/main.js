@@ -211,7 +211,7 @@ jQuery(document).ready(function($) {
     $(".subscription-form").submit(function(e) {
         e.preventDefault();
 
-        $.post('https://dashboard.witeroo.com/api/subscriptions', $(this).serialize(), (data) => {
+        $.post('https://witeroo.com/subscriptions', $(this).serialize(), (data) => {
             if (data.success) {
                 setSubscriptionActionCookie();
                 $('#subscription-alert').removeClass('alert-danger').addClass('alert-success').text(data.message).show();
