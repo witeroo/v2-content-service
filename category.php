@@ -10,9 +10,7 @@
                     if ($c < 3) {
         ?>
                         <div class="article-card-item">
-                            <div class="article-card-item-img">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
+                            <div class="article-card-item-img" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)"></div>
                             <div class="article-card-item-text">
                                 <a href="#" class="blog-tag"><?php single_cat_title(); ?></a>
                                 <a href="<?php the_permalink(); ?>">
@@ -28,9 +26,7 @@
                         </div>
                             <div class="article-cards-row d-flex">
                                 <div class="article-card-item">
-                                    <div class="article-card-item-img">
-                                        <?php the_post_thumbnail(); ?>
-                                    </div>
+                                    <div class="article-card-item-img" style="background-image: url(<?php echo get_the_post_thumbnail_url(); ?>)"></div>
                                     <div class="article-card-item-text">
                                         <a href="#" class="blog-tag"><?php single_cat_title() ?></a>
                                         <a href="<?php the_permalink(); ?>">

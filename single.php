@@ -40,7 +40,7 @@
                 <?php the_content(); ?>
             </div>
         </div>
-        <?php if(wp_count_posts()->publish > 6): ?>
+        <?php if(wp_count_posts()->publish > 1): ?>
         <div class="recent-blogs">
             <div class="recent-blogs-container articles-container">
                 <h3 class="continue">Continue Reading...</h3>
@@ -60,7 +60,7 @@
                             $relatedPostArray = [];
 
                             while ($query->have_posts()) : $query->the_post();
-                                $relatedPost['the_post_thumbnail'] = get_the_post_thumbnail();
+                                $relatedPost['the_post_thumbnail_url'] = get_the_post_thumbnail_url();
                                 $relatedPost['the_permalink'] = get_the_permalink();
                                 $relatedPost['the_title'] = get_the_title();
                                 $relatedPost['the_time'] = get_the_time('d M. Y');
@@ -77,9 +77,7 @@
                             foreach ($randomPostArray as $randomPostKey => $randomPostValue) {
                     ?>
                                 <div class="article-card-item">
-                                    <div class="article-card-item-img">
-                                        <?php echo $randomPostValue['the_post_thumbnail']; ?>
-                                    </div>
+                                    <div class="article-card-item-img" style="background-image: url(<?php echo $randomPostValue['the_post_thumbnail_url']; ?>)"></div>
                                     <div class="article-card-item-text">
                                         <a href="<?php echo get_category_link($choiceCategory); ?>" class="blog-tag"><?php echo $choiceCategory->name; ?></a>
                                         <a href="<?php echo $randomPostValue['the_permalink']; ?>">
