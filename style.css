@@ -123,7 +123,7 @@ textarea {
     height: 48px;
     padding: 14px 20px;
     border: 1px solid #DDDEDF;
-    border-radius: 999px;
+    border-radius: 16px;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -201,6 +201,11 @@ input[type="submit"] {
     display: flex;
 }
 
+.d-flex-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
 .d-inline-flex {
     display: inline-flex;
 }
@@ -243,20 +248,26 @@ nav.main-nav {
     justify-content: space-between;
     align-items: center;
     padding: 24px 120px;
-    background: #FFF;
-    border-bottom: 1px solid #DDDEDF;
+    background: #020D2C;
     font-weight: 600;
     font-size: 14px;
     line-height: 140%;
 }
 
-nav.main-nav .logo {
+nav.main-nav .logo,
+nav.main-nav .navbar-nav .logo a {
     width: 190.47px;
-    height: 26px;
+    height: 27px;
+    padding: 0;
 }
 
 .main-nav .navbar-nav {
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.main-nav .navbar-nav .left {
     align-items: center;
 }
 
@@ -265,12 +276,22 @@ nav.main-nav .logo {
     color: #01040A;
 }
 
-.main-nav .navbar-nav li:not(:last-child) {
+.main-nav .navbar-nav li {
     margin-right: 16px;
 }
 
-.main-nav .navbar-nav li:not(:last-child) a {
+.main-nav .navbar-nav .cta li {
+    margin-right: 0;
+}
+
+.main-nav .navbar-nav li a {
     padding: 10px 16px;
+    color: #EFF2FD;
+}
+
+.main-nav .navbar-nav .cta li a {
+    padding: 10px 24px;
+    color: #EFF2FD;
 }
 
 .navbar-nav .contact-btn {
@@ -497,19 +518,19 @@ section.blogs {
     height: 216px;
     overflow: hidden;
     border-radius: 16px 16px 0 0;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #DDDEDF;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    -webkit-transition: background-size 0.5s ease 0s;
-    -moz-transition: background-size 0.5s ease 0s;
-    transition: background-size 0.5s ease 0s;
+    -webkit-transition: background-size 2s ease 0s;
+    -moz-transition: background-size 2s ease 0s;
+    transition: background-size 2s ease 0s;
 }
 
 .blogs .article-card-item:hover .article-card-item-img {
     background-size: 125% 125%;
-    -webkit-transition: background-size 1s ease 0s;
-    -moz-transition: background-size 1s ease 0s;
-    transition: background-size 1s ease 0s;
 }
 
 .blogs .article-card-item .article-card-item-text {
