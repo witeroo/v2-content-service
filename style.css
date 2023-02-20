@@ -344,9 +344,7 @@ nav.main-nav .navbar-nav .logo a {
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-}
-
-.subscribe .subscribe-container {
+    border-radius: 24px;
     background-size: 1200px 419px;
 }
 
@@ -355,7 +353,8 @@ nav.main-nav .navbar-nav .logo a {
     width: 100%;
     max-width: unset;
     background: linear-gradient(73.97deg, #0033EE 58.42%, rgba(0, 51, 238, 0) 75.27%);
-    padding: 60px 120px;
+    padding: 80px;
+    border-radius: 24px;
     text-align: left;
 }
 

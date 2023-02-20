@@ -3,7 +3,7 @@
             <div class="section-header">
                 <h2>Subscribe for future updates</h2>
                 <p>
-                Subscribe today and get meaningful and insightful newsletters on technology and other industry-related content.
+                    Subscribe for articles and newsletters on technology and other industry-related content.
                 </p>
                 <div class="d-flex">
                     <a href="#" class="btn btn-secondary" id="subscribe-btn">Subscribe</a>
