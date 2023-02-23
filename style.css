@@ -123,7 +123,7 @@ textarea {
     height: 48px;
     padding: 14px 20px;
     border: 1px solid #DDDEDF;
-    border-radius: 16px;
+    border-radius: 12px;
     font-weight: 400;
     font-size: 14px;
     line-height: 140%;
@@ -411,7 +411,7 @@ nav.blog-nav .search-box input {
     width: 296.5px;
     border: 1px solid #FFF;
     padding: 10px 40px;
-    border-radius: 999px;
+    border-radius: 10px;
     font-weight: 600;
     font-size: 14px;
     line-height: 140%;
@@ -716,8 +716,16 @@ section.search-header {
 /* footer */
 
 footer {
+    background-color: #03164A;
+    background-image: url('img/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+footer .footer-container {
     padding: 70px 120px 80px;
-    background: #03164A;
+    background: linear-gradient(360deg, rgba(3, 22, 74, 0.2) 1.47%, #03164A 47.28%);
 }
 
 footer p,
@@ -854,6 +862,8 @@ footer p.copy {
 
 .subscription-popup-content {
     margin: auto;
+    border-radius: 24px;
+    overflow: hidden;
 }
 
 .subscription-popup-image,
@@ -890,7 +900,8 @@ footer p.copy {
 .subscription-form-content {
     margin: auto;
     width: 629px;
-    border-radius: 8px;
+    border-radius: 24px;
+    overflow: hidden;
     background: #FFF;
 }
 
@@ -932,8 +943,12 @@ footer p.copy {
     nav.main-nav {
         padding: 24px 60px;
     }
-    .main-nav .navbar-nav li:not(:last-child) a {
+    .main-nav .navbar-nav .left {
+        flex-direction: column;
+    }
+    .main-nav .navbar-nav li a {
         padding: 10px 8px;
+        color: #808187;
     }
     .navbar-nav .contact-btn {
         margin-left: 8px;
@@ -1021,7 +1036,7 @@ footer p.copy {
     /*
      * footer
     */
-    footer {
+    footer .footer-container {
         padding: 70px 60px 80px;
     }
     footer .footer-col {
@@ -1045,14 +1060,12 @@ footer p.copy {
     /* header */
     nav.main-nav {
         justify-content: space-between;
-        padding: 24px;
+        padding: 32px 24px;
         font-size: 16px;
         line-height: 150%;
     }
     nav.main-nav .logo {
         width: 191.81px;
-        height: 40px;
-        padding: 8px;
     }
     .main-nav .navbar-nav {
         z-index: 9;
@@ -1064,7 +1077,6 @@ footer p.copy {
         width: 100%;
         border-bottom: 1px solid #DDDEDF;
         background: #FFF;
-        /* background: red; */
         padding: 48px 0;
         transition: all 0.55s 0.125s cubic-bezier(0.33333, 0.66667, 0.66667, 1);
     }
@@ -1072,14 +1084,18 @@ footer p.copy {
         top: calc(100% + 1px);
         transition: all 0.55s 0.125s cubic-bezier(0.33333, 0.66667, 0.66667, 1);
     }
-    .main-nav .navbar-nav li:not(:last-child) {
+    .main-nav .navbar-nav li:not(:first-child) {
         margin: unset;
         display: flex;
+        width: 222px;
     }
-    .main-nav .navbar-nav li:not(:last-child) a {
+    .main-nav .navbar-nav li:not(:first-child) a {
         width: 100%;
         padding: 12px;
         text-align: center;
+    }
+    .main-nav .navbar-nav .cta {
+        justify-content: center;
     }
     .navbar-nav .contact-btn {
         margin: auto;
@@ -1093,10 +1109,8 @@ footer p.copy {
     * @link https://github.com/jonsuh/hamburgers
     */
     .hamburger {
-        padding: 14.17px 9.5px;
         display: inline-block;
         /* important */
-        height: 41.5px;
         font: inherit;
         color: inherit;
         background-color: transparent;
@@ -1107,7 +1121,8 @@ footer p.copy {
     .hamburger.is-active .hamburger-inner,
     .hamburger.is-active .hamburger-inner::before,
     .hamburger.is-active .hamburger-inner::after {
-        background-color: #01040A;
+        /* background-color: #01040A; */
+        background-color: #FFF;
     }
     .hamburger-box {
         width: 21px;
@@ -1125,7 +1140,7 @@ footer p.copy {
     .hamburger-inner::after {
         width: 21px;
         height: 1.5px;
-        background-color: #01040A;
+        background-color: #FFF;
         border-radius: 4px;
         position: absolute;
         transition-property: transform;
@@ -1205,6 +1220,7 @@ footer p.copy {
     .subscribe .subscribe-container {
         background-image: url('img/subscribe-bg-m.png');
         background-size: cover;
+        border-radius: 0;
     }
     .subscribe .section-header {
         background: unset;
@@ -1271,7 +1287,7 @@ footer p.copy {
     .blogs .article-card-item .article-card-item-img,
     .blogs .article-card-item-img img {
         width: 100%;
-        height: auto;
+        height: 216px;
     }
     .blogs .article-card-item .article-card-item-text {
         width: 100%;
@@ -1397,7 +1413,7 @@ footer p.copy {
     /*
      * footer
     */
-    footer {
+    footer .footer-container {
         padding: 60px 24px 24px;
     }
     footer .footer-row {
