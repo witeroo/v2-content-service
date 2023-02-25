@@ -761,7 +761,7 @@ footer .footer-col li {
 
 footer .footer-about {
     flex-direction: column;
-    width: 384px;
+    width: 480px;
     padding: 0;
 }
 
@@ -773,7 +773,7 @@ footer .logo {
 
 footer .footer-about p {
     margin-bottom: 24px;
-    width: 336px;
+    width: 442px;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
