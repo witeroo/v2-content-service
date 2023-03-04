@@ -1,6 +1,14 @@
 "use strict";
 
 jQuery(document).ready(function($) {
+    $('.main-nav .logo').click(function(e) {
+        e.preventDefault();
+        $(".loader").css('display', 'flex');
+        setTimeout(function() {
+            window.location = 'https://witeroo.com';
+        }, 5000)
+    })
+
     // mobile menu
     const $hamburger = $(".hamburger");
     $hamburger.click(function(e) {

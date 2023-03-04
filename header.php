@@ -23,6 +23,11 @@
 </head>
 
 <body>
+    <div class="loader d-none">
+        <video autoplay muted loop class="loader-bg-video">
+            <source src="https://witeroo.com/Witeroo.mp4" type="video/mp4">
+        </video>
+    </div>
     <nav class="main-nav d-flex p-relative">
     <div class="logo d-sm-flex d-none">
         <a href="https://witeroo.com/" class="logo">
