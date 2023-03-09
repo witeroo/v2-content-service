@@ -4,7 +4,9 @@ jQuery(document).ready(function($) {
     $('.main-nav .logo').click(function(e) {
         e.preventDefault();
         $(".loader").css('display', 'flex');
+        $(".loader .loader-bg-video")[0].play();
         setTimeout(function() {
+            $(".loader").css('display', 'none');
             window.location = 'https://witeroo.com';
         }, 5000)
     })
